@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Jockey+One&display=swap');
 
+
+
+
 .mainContainer {
     display: flex;
     justify-content: center;
@@ -8,8 +11,7 @@
     flex-direction: column;
     text-align: center;
     min-height: 100vh;
-    width: 100%;
-    padding: 0 16px;
+    padding: 30px;
 
 }
 
@@ -27,7 +29,6 @@
 }
 
 .categories {
-    width: 100%;
     max-width: 375px;
     padding: 20px;
     margin-bottom: 20px;
@@ -44,13 +45,10 @@
     font-size: 32px;
     text-decoration: none;
     color: #000000;
-
-    background-color: #BEB7DC;
+    background-color: rgba(126, 109, 205, 60%);
     padding: 10px 20px;
     border-radius: 10px;
-    backface-visibility: 60%;
     border: 3px solid #4128AC;
-
     width: 315px;
     height: 85px;
     align-content: center;

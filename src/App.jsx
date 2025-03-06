@@ -14,7 +14,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Main/>}/>
       <Route path="/quiz/:topic" element={<Quiz setPoints={setPoints}/>}/>
-      <Route path="/quiz/:topic/result" element={<Result points={points}/>}/>
+      <Route path="/quiz/:topic/result" element={<Result points={points} setPoints={setPoints}/>}/>
     </Routes>
   )
 }

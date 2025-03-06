@@ -693,8 +693,8 @@ export const questions = [
                     },
                     {
                         id: 2,
-                        text: "Schlange",
-                        isRight: true
+                        text: "Wal",
+                        isRight: false
                     },
                     {
                         id: 3,
@@ -703,8 +703,8 @@ export const questions = [
                     },
                     {
                         id: 4,
-                        text: "Wal",
-                        isRight: false
+                        text: "Schlange",
+                        isRight: true
                     }
                 ]
             },
@@ -714,13 +714,13 @@ export const questions = [
                 answers: [
                     {
                         id: 1,
-                        text: "Das Herz",
-                        isRight: false
+                        text: "Die Lunge",
+                        isRight: true
                     },
                     {
                         id: 2,
-                        text: "Die Lunge",
-                        isRight: true
+                        text: "Das Herz",
+                        isRight: false
                     },
                     {
                         id: 3,
@@ -745,8 +745,8 @@ export const questions = [
                     },
                     {
                         id: 2,
-                        text: "Stickstoff",
-                        isRight: true
+                        text: "Edegasse",
+                        isRight: false
                     },
                     {
                         id: 3,
@@ -755,8 +755,8 @@ export const questions = [
                     },
                     {
                         id: 4,
-                        text: "Edelgase",
-                        isRight: false
+                        text: "Stickstoff",
+                        isRight: true
                     }
                 ]
             }

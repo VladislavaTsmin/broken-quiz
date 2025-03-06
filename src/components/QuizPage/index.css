@@ -8,15 +8,20 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    width: 100%;
     padding: 0 16px;
+    align-items: center;
+    padding: 30px;
+}
+
+.wtf{
+    width: 315px;
 }
 
 .topic{
     font-weight: 350;
     font-size: 32px;
     text-align: center;
-    margin-top: 32px;
+
 }
 
 
@@ -42,7 +47,7 @@
     display: flex;
     flex-direction: column;
 
-    width: 100%;
+    width: 315px;
     height: 85px;
     max-width: 315px;
     margin-bottom: 10px;
@@ -70,7 +75,7 @@
 .forward{
     background-color: black;
     color: white;
-    max-width: 315px;
+    width: 315px;
     height: 45px;
     border-radius: 10px;
     margin-left: 30px;
