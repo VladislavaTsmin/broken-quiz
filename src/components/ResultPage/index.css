@@ -1,0 +1,103 @@
+a {
+    text-decoration: none;
+}
+
+.resultContainer{
+    padding: 0 16px;
+    margin: 195px 55px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.points{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    background-color: #FADD00;
+    border-radius: 50%;
+    font-weight: 350;
+    font-size: 24px;
+
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.again{
+    position: relative;
+    width: 265px;
+    height: 56px;
+    background-color: #BEB7DC;
+    color: black;
+    border-radius: 10px;
+    margin-top: 122px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    cursor: pointer;
+    border: 3px solid #4128AC;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.rotateIcon{
+    position: absolute;
+    right: 8px;
+    padding: 16px;
+}
+
+.again:hover {
+    background-color: #7E6DCD;
+}
+
+.again:active {
+    background-color: #3e2585;
+}
+
+
+
+
+.toMainPage{
+    position: relative;
+    width: 265px;
+    height: 56px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 126px;
+    font-size: 24px;
+    cursor: pointer;
+    border: 3px solid black;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.homeIcon{
+    position: absolute;
+    right: 8px;
+    padding: 16px;
+}
+
+
+.toMainPage:hover {
+    opacity: 75%;
+}
+
+.toMainPage:active {
+    opacity: 90%;
+}
+
+

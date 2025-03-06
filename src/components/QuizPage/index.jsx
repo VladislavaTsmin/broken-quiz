@@ -3,12 +3,12 @@ import { questions } from '../../data/questions';
 import { useState } from 'react';
 import "./index.css";
 
-export default function Quiz() {
+export default function Quiz({setPoints}) {
 
     const { topic } = useParams();
     const [num, setNum] = useState(0);
     const [selectedId, setSelectedId] = useState(null);
-    const [points, setPoints] = useState(0)
+    
 
     const quizObj = questions.find(obj => obj.title === topic)
 
@@ -33,28 +33,34 @@ export default function Quiz() {
 
 
     return (
-        <div className='container'>
+        <div className='quizContainer'>
+
+            <p className='topic'>{topic}</p>
+
             <div className='textContainer'>
                 <p>{num + 1} von {length}</p>
-                <p>{points} / {length}</p>
-                <p>{topic}</p>
-                <div >{quizObj.quiz[num].question}</div>
+                <p>Frage: </p>
+                <div>{quizObj.quiz[num].question}</div>
             </div>
 
 
-            {quizObj.quiz[num].answers.map(el => <div key={el.id} onClick={() => { setSelectedId(el.id); }} className='answers' style={{ color: selectedId === el.id ? "red" : "black" }}>{el.text}</div>)}
+            <div className='answersContainer'>
+                {quizObj.quiz[num].answers.map(el => <button key={el.id} onClick={() => { setSelectedId(el.id); }} className='answers' style={{
+                    backgroundColor: selectedId === el.id ? "#4128AC" : "#BEB7DC",
+                    color: selectedId === el.id ? "white" : "black"
+                }}>{el.text}</button>)}
+            </div>
 
 
-
-            {num == length - 1 ? (
-                <Link to={`/quiz/${topic}/result`} className='toResult'>
-                    <button>Ergebniss</button>
+            {num == length - 1 && selectedId != null ? (
+                <Link to={`/quiz/${topic}/result`}>
+                    <button className='result'>Ergebniss</button>
                 </Link>
             ) : selectedId != null ? (
                 <button onClick={() => { nextQuestion() }}
                     className='forward'>Weiter</button>
             ) : null}
-
+                
         </div>
     )
 }

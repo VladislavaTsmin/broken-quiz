@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Jockey+One&display=swap');
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 16px;
+
+}
+
+.mainContainer>h1 {
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    margin: 21px auto 64px;
+    font-size: 32px;
+}
+
+.mainContainer>p {
+    font-family: "Jockey One", sans-serif;
+    font-weight: 350;
+    font-size: 32px;
+}
+
+.categories {
+    width: 100%;
+    max-width: 375px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+}
+
+.categories>a {
+    font-family: "Jockey One", sans-serif;
+    font-weight: 350;
+    font-size: 32px;
+    text-decoration: none;
+    color: #000000;
+
+    background-color: #BEB7DC;
+    padding: 10px 20px;
+    border-radius: 10px;
+    backface-visibility: 60%;
+    border: 3px solid #4128AC;
+
+    width: 315px;
+    height: 85px;
+    align-content: center;
+}
+
+.categories>a:hover{
+    background-color: #7E6DCD !important;
+    box-shadow: -4px 4px 10px rgba(126, 109, 205, 90%);
+}
+
+.categories>a:active {
+    background-color: #3e2585; 
+    transform: scale(0.98); 
+}

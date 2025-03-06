@@ -1,19 +1,20 @@
 import React from "react";
-import "./style.css";
 import { Link } from "react-router";
+import "./style.css";
 
-export default function Main () {
-
-
-
+export default function Main() {
 
 
 
-    return(
-        <div>
-            <h1 className="title">Broken Quiz</h1>
-            <p className="text">Welche Kategorie werden Sie wählen?</p>
-            
+
+
+
+    return (
+        <div className="mainContainer">
+                <h1>Broken Quiz</h1>
+                
+                <p>Welche Kategorie werden Sie wählen?</p>
+
             <div className="categories">
                 <Link to={`/quiz/Mathe`}>Mathe</Link>
                 <Link to={`/quiz/Englisch`}>Englisch</Link>

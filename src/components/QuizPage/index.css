@@ -1,0 +1,109 @@
+* {
+    font-family: "Jockey One", sans-serif;
+    margin: 0;
+}
+
+
+.quizContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 16px;
+}
+
+.topic{
+    font-weight: 350;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+
+.textContainer{
+    margin-left: 30px;
+    font-size: 32px;
+}
+.textContainer :first-child {
+    font-size: 14px;
+    margin-top: 34px;
+}
+
+.textContainer :nth-child(2){
+    margin-top: 10px;
+}
+
+
+.answersContainer{
+    margin: 32px 30px 30px ;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 85px;
+    max-width: 315px;
+    margin-bottom: 10px;
+
+    font-size: 29px;
+    text-decoration: none;
+
+    padding: 18px 20px;
+    border-radius: 10px;
+    border: 3px solid #4128AC;
+    align-items: center;
+    cursor: pointer;
+}
+
+.answers:hover {
+    background-color: #7E6DCD !important;
+    box-shadow: -4px 4px 10px rgba(126, 109, 205, 90%);
+}
+
+.answers:active {
+    background-color: #3e2585; 
+    transform: scale(0.98); 
+}
+
+.forward{
+    background-color: black;
+    color: white;
+    max-width: 315px;
+    height: 45px;
+    border-radius: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+    margin-bottom: 130px;
+    font-size: 24px;
+    border: 3px solid black;
+}
+
+.forward:hover{
+    opacity: 75%;
+}
+.forward:active{
+    opacity: 90%;
+}
+
+.result{
+    background-color: black;
+    color: white;
+    width: 315px;
+    height: 45px;
+    border-radius: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+    margin-bottom: 130px;
+    font-size: 24px;
+    border: 3px solid black;
+}
+
+
+.result:hover{
+    opacity: 75%;
+}
+.result:active{
+    opacity: 90%;
+}

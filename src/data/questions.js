@@ -684,26 +684,26 @@ export const questions = [
             },
             {
                 id: 2,
-                question: "Was sind Chromosomen?",
+                question: "Welches der folgenden Tiere ist ein Beispiel für ein Reptil?",
                 answers: [
                     {
                         id: 1,
-                        text: "Strukturen, die die DNA enthalten",
-                        isRight: true
-                    },
-                    {
-                        id: 2,
-                        text: "Die Zellwände der Pflanzen",
+                        text: "Frosch",
                         isRight: false
                     },
                     {
+                        id: 2,
+                        text: "Schlange",
+                        isRight: true
+                    },
+                    {
                         id: 3,
-                        text: "Die Organellen, die Energie produzieren",
+                        text: "Papagei",
                         isRight: false
                     },
                     {
                         id: 4,
-                        text: "Flüssigkeiten, die Nährstoffe transportieren",
+                        text: "Wal",
                         isRight: false
                     }
                 ]
