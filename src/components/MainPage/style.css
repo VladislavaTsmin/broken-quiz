@@ -26,6 +26,10 @@
     font-family: "Jockey One", sans-serif;
     font-weight: 350;
     font-size: 32px;
+    max-width: 375px;
+    word-wrap: break-word;
+    white-space: normal;
+
 }
 
 .categories {

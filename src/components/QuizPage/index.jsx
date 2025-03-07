@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import { questions } from '../../data/questions';
 import { useState } from 'react';
+import { BiHomeAlt } from "react-icons/bi";
 import "./index.css";
 
 export default function Quiz({ setPoints }) {
@@ -35,9 +36,21 @@ export default function Quiz({ setPoints }) {
     return (
         <div className='quizContainer'>
 
-            <p className='topic'>{topic}</p>
 
-            <div className='wtf'>
+            <div className='quizCenter'>
+
+                <div className='quizHeader'>
+
+                    <Link to="/">
+                        <button className='toHomePageContainer'>
+                            <BiHomeAlt className='toHomePage' />
+                        </button>
+                    </Link>
+
+                    <p className='topic'>{topic}</p>
+
+                </div>
+
 
                 <div className='textContainer'>
                     <p>{num + 1} von {length}</p>
@@ -52,6 +65,7 @@ export default function Quiz({ setPoints }) {
                         color: selectedId === el.id ? "white" : "black"
                     }}>{el.text}</button>)}
                 </div>
+
 
 
                 {num == length - 1 && selectedId != null ? (

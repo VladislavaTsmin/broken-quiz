@@ -6,6 +6,13 @@ a {
     padding: 30px;
 }
 
+.resultPageTopic{
+    font-weight: 350;
+    font-size: 32px;
+    text-align: center;
+
+}
+
 .contentContainer{
     padding: 0 16px;
     margin: 195px 55px 120px;
@@ -56,6 +63,7 @@ a {
     position: absolute;
     right: 8px;
     padding: 16px;
+    box-sizing: content-box;
 }
 
 .again:hover {
@@ -84,10 +92,11 @@ a {
     color: white;
     border-radius: 10px;
     margin-bottom: 126px;
-    font-size: 24px;
+    font-size: 28px;
     cursor: pointer;
     border: 3px solid black;
-    align-items: center;
+
+
     align-content: center;
     text-align: center;
 
@@ -96,12 +105,15 @@ a {
     justify-content: center;
     padding: 10px 20px;
     text-decoration: none;
+
 }
 
 .homeIcon{
     position: absolute;
     right: 8px;
     padding: 16px;
+    box-sizing: content-box;
+
 }
 
 

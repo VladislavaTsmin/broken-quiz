@@ -21,7 +21,7 @@ export default function Result({ points, setPoints}) {
 
     return (
         <div className="resultContainer">
-            <p className="topic">{topic}</p>
+            <p className="resultPageTopic">{topic}</p>
             <div className="contentContainer">
                 <div className="points">{points} / {numberOfAllPoints()}</div>
 

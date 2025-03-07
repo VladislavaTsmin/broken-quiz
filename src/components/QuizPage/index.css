@@ -1,6 +1,7 @@
 * {
     font-family: "Jockey One", sans-serif;
     margin: 0;
+    box-sizing: border-box;
 }
 
 
@@ -8,39 +9,95 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding: 0 16px;
     align-items: center;
+    justify-content: center;
     padding: 30px;
+    max-width: 375px;
+
+    margin: 0 auto; 
 }
 
-.wtf{
-    width: 315px;
+
+
+.quizHeader{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    width: 100%;
 }
 
-.topic{
+.toHomePageContainer {
+    position: relative;
+    color: white;
+    width: 46px;
+    height: 40px;
+    background-color: #7E6DCD;
+    border-radius: 15px;
+    border: 2px solid #7E6DCD;
+    font-size: 28px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.toHomePage {
+    position: absolute;
+    left: 7px;
+    top: 5px;
+    
+}
+
+.toHomePageContainer:hover{
+    opacity: 60%;
+    box-shadow: -4px 4px 4px rgba(190, 183, 220, 0.9);
+}
+
+.toHomePageContainer:active{
+    background-color: #4128AC;
+    box-shadow: 0px 4px 4px rgba(65, 40, 172, 1) inset ;
+}
+
+
+.topic {
+    position: absolute;
+    left: 40%;
     font-weight: 350;
     font-size: 32px;
     text-align: center;
-
 }
 
 
-.textContainer{
+.textContainer {
     margin-left: 30px;
     font-size: 32px;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
 }
+
 .textContainer :first-child {
     font-size: 14px;
     margin-top: 34px;
 }
 
-.textContainer :nth-child(2){
+.textContainer :nth-child(2) {
     margin-top: 10px;
 }
 
+.textContainer :last-child{
+    max-width: 60%;
+    word-wrap: break-word;
+    white-space: normal;
+    max-width: 375px;
 
-.answersContainer{
-    margin: 32px 30px 30px ;
+}
+
+
+.answersContainer {
+    margin: 32px 30px 30px;
 }
 
 .answers {
@@ -68,11 +125,11 @@
 }
 
 .answers:active {
-    background-color: #3e2585; 
-    transform: scale(0.98); 
+    background-color: #3e2585;
+    transform: scale(0.98);
 }
 
-.forward{
+.forward {
     background-color: black;
     color: white;
     width: 315px;
@@ -85,14 +142,15 @@
     border: 3px solid black;
 }
 
-.forward:hover{
+.forward:hover {
     opacity: 75%;
 }
-.forward:active{
+
+.forward:active {
     opacity: 90%;
 }
 
-.result{
+.result {
     background-color: black;
     color: white;
     width: 315px;
@@ -106,9 +164,10 @@
 }
 
 
-.result:hover{
+.result:hover {
     opacity: 75%;
 }
-.result:active{
+
+.result:active {
     opacity: 90%;
 }
